@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0f0a 50%, #2a1510 100%);
     position: relative;
     overflow: visible;
 }
