@@ -50,6 +50,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    background: var(--bg-primary);
 }
 
 .container {
@@ -138,11 +139,12 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar .container {
@@ -325,8 +327,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-links a:hover {
-    background: white;
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--bg-dark);
     transform: translateY(-3px);
 }
 
@@ -374,9 +376,10 @@ h1, h2, h3, h4, h5, h6 {
 .stat {
     text-align: center;
     padding: var(--spacing-sm);
-    background: white;
+    background: var(--bg-secondary);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
 }
 
 .stat h4 {
@@ -399,10 +402,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-category {
-    background: white;
+    background: var(--bg-secondary);
     padding: var(--spacing-md);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
 }
 
 .skill-category h3 {
@@ -474,11 +478,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-card {
-    background: white;
+    background: var(--bg-secondary);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
+    border: 1px solid var(--border-color);
 }
 
 .project-card:hover {
@@ -526,12 +531,13 @@ h1, h2, h3, h4, h5, h6 {
 .project-link {
     width: 45px;
     height: 45px;
-    background: white;
+    background: var(--bg-dark);
     color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    border: 2px solid var(--primary-color);
     font-size: 1.2rem;
     transition: var(--transition);
 }
@@ -613,10 +619,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .timeline-content {
     width: calc(50% - 50px);
-    background: white;
+    background: var(--bg-secondary);
     padding: var(--spacing-sm);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -668,10 +675,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .education-card {
-    background: white;
+    background: var(--bg-secondary);
     padding: var(--spacing-md);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
 }
 
 .education-icon {
@@ -897,12 +905,13 @@ h1, h2, h3, h4, h5, h6 {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: white;
+        background: var(--bg-primary);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: var(--shadow);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         padding: 2rem 0;
+        border-bottom: 1px solid var(--border-color);
     }
     
     .nav-menu.active {
